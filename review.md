@@ -4,7 +4,7 @@
 * Existe um erro ao utilizar da opção de atualizar o cliente (opção 5), o erro ocorre quando digitarmos uma string e não um número, seria interessante fazer a validação de inputs para evitar que o mesmo aconteça. Ao digitar uma string como input o sistema entra em loop infinito resultando no erro; 
 
 * Ao registrar mais de 10 clientes no sistema ocorre um erro, este erro ocorre pois na função insere_cliente() existe uma condição que verifica se existe mais de 10 clientes registrados "if (total_clientes >= 10)", nesta condição, ao ser executada, ocorre um return indicando que a função não efetuara novos registros de clientes, e informa o usuário que a lista de clientes está cheia. Ao realizar esse return ocorre um problema no loop principal do código, para resolver este problema o indicado é modificar a lógica da condição, fazendo com que somente é feito o registro de clientes se a lista for menor que 10; Abaixo se encontra o código da função:
-`
+```
 void insere_cliente() {
     if (total_clientes < 10) {
         printf("Insira um cliente:\n");
@@ -15,7 +15,7 @@ void insere_cliente() {
 else {
         printf("A lista está cheia, não será feito o registro de um novo cliente\n");
 }
-`
+```
 * O mesmo erro de return ocorre na função insere_produto, as mesmas modificações feitas na função insere_cliente resolve o problema. Aqui está a função modificada:
 `
 void insere_produto() {
