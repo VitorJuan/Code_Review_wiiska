@@ -17,7 +17,7 @@ else {
 }
 ```
 * O mesmo erro de return ocorre na função insere_produto, as mesmas modificações feitas na função insere_cliente resolve o problema. Aqui está a função modificada:
-`
+```
 void insere_produto() {
     if (total_produtos < 10) {
         printf("Insira um produto:\n");
@@ -28,7 +28,7 @@ void insere_produto() {
         printf("A lista de produtos esta cheia, não é possível registrar novos produtos\n");
     }
 }
-`
+```
 
 # MELHORIAS A SEREM PROPOSTAS:
 * Seria interessante adicionar a possibilidade de listar os produtos cadastrados para poder verificar a existência dos mesmos, bem como, a possibilidade de atualização dos mesmos;
